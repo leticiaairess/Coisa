@@ -49,7 +49,7 @@ public class RegistroResumos {
         return resumos;
     }
     public String imprimeResumos() {
-        String texto = "- " + quantidadeResumos + "resumo(s) cadastrado(s)\n";
+        String texto = "- " + quantidadeResumos + " resumo(s) cadastrado(s)\n";
         for (int i = 0; i < quantidadeResumos; i++) {
             texto += temas[i];
             if(i < quantidadeResumos - 1) {

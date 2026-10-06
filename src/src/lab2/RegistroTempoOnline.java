@@ -20,6 +20,6 @@ public class RegistroTempoOnline {
         return false;
     }
     public String toString() {
-        return nomeDisciplina + tempoOnlineUsado + tempoOnlineEsperado;
+        return nomeDisciplina + tempoOnlineUsado + "/" + tempoOnlineEsperado;
     }
 }

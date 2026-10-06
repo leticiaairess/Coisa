@@ -23,7 +23,7 @@ public class Coisa {
         System.out.println(descanso.getStatusGeral());
     }
     private static void registrarTempoOnline() {
-        RegistroTempoOnline tempoLP2 = new RegistroTempoOnline("LP2", 30);
+        RegistroTempoOnline tempoLP2 = new RegistroTempoOnline("LP2 ", 30);
         tempoLP2.adicionaTempoOnline(10);
         System.out.println(tempoLP2.atingiuMetaTempoOnline());
         tempoLP2.adicionaTempoOnline(10);
@@ -32,7 +32,7 @@ public class Coisa {
         tempoLP2.adicionaTempoOnline(2);
         System.out.println(tempoLP2.atingiuMetaTempoOnline());
         System.out.println(tempoLP2.toString());
-        RegistroTempoOnline tempoP2 = new RegistroTempoOnline("P2");
+        RegistroTempoOnline tempoP2 = new RegistroTempoOnline("P2 ", 30);
         System.out.println(tempoP2.toString());
     }
     private static void controlarDisciplina() {

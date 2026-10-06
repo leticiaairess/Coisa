@@ -19,9 +19,11 @@ public class Disciplina {
     }
     private double calculaMedia() {
         double soma = 0;
+        // Que massa esse for
         for (double n : notas) {
             soma += n;
         }
+        // Talvez retirar a var soma?? Colocar direto no return a (soma/notas.length)
         double media = soma / notas.length;
         return media;
     }
@@ -32,9 +34,12 @@ public class Disciplina {
         }
         return false;
     }
+
+    // Marcar override
     public String toString() {
         double media = this.calculaMedia();
-        return "Disciplina: " + nomeDisciplina + "\nHoras de estudo: " + horasDeEstudo + "\nMédia das notas: " + media + "\nNotas: " +  Arrays.toString(notas);
+        // Tirar o duplo +
+        return nomeDisciplina + + horasDeEstudo + media + Arrays.toString(notas);
     }
 }
 
