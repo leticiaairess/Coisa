@@ -23,7 +23,7 @@ public class Disciplina {
         for (double n : notas) {
             soma += n;
         }
-
+        // Talvez retirar a var soma?? Colocar direto no return a (soma/notas.length)
         double media = soma / notas.length;
         return media;
     }
@@ -35,6 +35,7 @@ public class Disciplina {
         return false;
     }
 
+    // Marcar override
     public String toString() {
         double media = this.calculaMedia();
         // Tirar o duplo +
