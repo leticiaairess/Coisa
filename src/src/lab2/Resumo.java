@@ -1,17 +1,17 @@
 package lab2;
 
 /**
- * Representa os resumos cadastrados pelo RegistroResumos.
- * Cada resumos precisa ter um tema e um conteudo.
+ * Representação dos resumos cadastrados pelo RegistroResumos.
+ * Cada resumo precisa ter obrigatoriamente um tema e um conteudo.
  *
- * @author Daniela Junkes Fernandes
+ * @author Ana Leticia Aires
  */
 public class Resumo {
     private String tema;
     private String conteudo;
 
     /**
-     * Constrói um Resumo com base no tema e no conteudo
+     * Constrói um Resumo a partir de um tema e um conteudo
      *
      * @param tema     tema do resumo
      * @param conteudo conteudo do resumo
@@ -42,6 +42,7 @@ public class Resumo {
      */
     @Override
     public String toString() {
+
         return tema + ": " + conteudo;
     }
 }
